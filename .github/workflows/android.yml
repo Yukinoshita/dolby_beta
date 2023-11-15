@@ -28,7 +28,7 @@ jobs:
         run: rm -rf UnblockNeteaseMusic/.yarn app/src/main/assets/UnblockNeteaseMusic.zip
 
       - name: Archive UnblockNeteaseMusic
-        run: cd UnblockNeteaseMusic && zip -r app/src/main/assets/UnblockNeteaseMusic.zip * && cd .. && rm -rf UnblockNeteaseMusic
+        run: cd UnblockNeteaseMusic && zip -r ../app/src/main/assets/UnblockNeteaseMusic.zip * && cd .. && rm -rf UnblockNeteaseMusic
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
